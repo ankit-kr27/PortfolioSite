@@ -1,0 +1,145 @@
+/* It is always recommended to place the elements to be styled in an alphabetical order */
+
+body{
+    margin: 0;
+    background-color: #E8F9FD;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.bottom-cloud{
+    position : absolute;
+    left : 300px;
+
+    /* Absolute positioning makes the element come out of the html flow and adjusts the rest of the elements as if it(the abs positioned element) is not even there. Then we can define it's position relative to it's parent element or to the whole body */
+}
+
+.cpp{
+    width: 25%;     /* It becomes the 25% of the width of it's parent element which in this case is the skill row */
+    float: left;        /* It makes the image float on to the left portion of the parent division and wrap around the text to the right of the image */
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+/* .cpp-clear{
+    clear: left;    /* clear is like anti of float. It makes it not wrapped around anything and let it take it's individual space throughout the width of the parent division }
+*/
+
+.c-lang{
+    width: 25%;
+    float: right;   /* this makes the image float on the right portion of the div and the rest of the text to be wrapped on to the left portion of the div */
+}
+
+.webd{
+    width: 25%;
+    float : left;
+    margin-right: 30px;
+}
+
+.writing{
+    width: 25%;
+    float: right;
+}
+
+.footer-link{
+    color: #11999E;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1%;
+    
+}
+
+h1{
+    color: #66BFBF;
+    margin : 50px auto 0 auto; /* top right bottom left (clockwise circular) */
+    font-family: 'Tangerine', cursive;
+    /* font-size: 562.5%;      100% font size refers to 16px in default screen size 100/16x90 = 562.5 */
+    /* to get the font % for 90px */
+
+    font-size: 5.625rem; /* rem is root em, it doesn't gets affected by parent element changes in the sizing */
+
+    /* line-height: 2; line height defines the spacing between two lines or rather the height of the line */
+    /* line-height: 1;  it is the default line height*/
+}
+
+h2{
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;    /* It defines the thickness of text */ 
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+.profile-img{
+    margin-top: 50px;
+    width : 10%;
+}
+
+.skill-row{
+    width : 50%;     /* it makes the content confined in 50% of the width of the screen (The division positions itself in the leftmost portion of the screen) */
+    
+    text-align: left;   /* it will override the overall body alignment which is set to centre */
+
+    /* margin: auto;   It sets the margin of the division as auto from all sides, eventually postioning the elements of the division at the centre */
+    margin : 100px auto 100px auto ;
+    line-height: 2;
+}
+
+.top-cloud{
+    position : absolute;
+    right : 300px;
+    top : 50px;
+
+    /* To make the child element's position relative to the parent element, we need to set the position of parent element as relative and that of the child element as absolute */
+}
+
+.top-container{
+    background-color: #E8F9FD;
+    padding: 100px;
+    padding-bottom: 0;
+    text-align: center;
+    position: relative;    
+    
+    /* In relative positioning, the position of the element can be defined relative to its prior position, but also keeping the prior space of that element intact as general html flow */
+}
+
+.bottom-container{
+    background-color: #66BFBF;
+    margin: 30px 0px 0px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.copyright{
+    color: white;
+    font-size: 10px;
+}
+
+.btn{
+    border-radius: 7px;
+    text-decoration: none;
+    background-color: #66BFBF;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mail-div{
+    margin: 50px;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 7px;
+    width: 5%;
+    border-color: rgb(163, 162, 162);
+    margin: 30px auto 30px auto;
+}
+
+
+
